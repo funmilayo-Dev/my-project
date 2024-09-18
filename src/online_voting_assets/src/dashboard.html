@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ICP Voting System</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#vote">Vote</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Welcome, [User Name]</h2>
+            <p>Your Voting History:</p>
+            <ul>
+                <li>Election 1: Voted for Candidate A</li>
+                <li>Election 2: Voted for Candidate B</li>
+            </ul>
+            <p>Notifications:</p>
+            <ul>
+                <li>Election 3 is upcoming on [Date]</li>
+            </ul>
+            <p><a href="#profile">Manage Profile</a></p>
+        </section>
+    </main>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ECFFE6;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #399918;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #399918;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+fieldset {
+    border: none;
+    margin: 1rem 0;
+}
+
+legend {
+    font-weight: bold;
+}
+    </style>
+    <footer>
+        <p>&copy; 2024 ICP Voting System</p>
+    </footer>
+</body>
+</html>

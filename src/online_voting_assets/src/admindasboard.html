@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - ICP Voting System</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Results</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="Userlogin.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="getResults">
+            <h2>Voting Results</h2>
+            <p>Real-time updates of voting results will be displayed here.</p>
+            <!-- Real-time data visualization will be implemented using JavaScript and chart libraries -->
+        </section>
+        <div id="admin">
+            <h2>Admin Section</h2>
+            <div>
+                <input type="text" id="candidateName" placeholder="Enter candidate name">
+                <button id="addCandidate">Add Candidate</button>
+            </div>
+           
+        
+            <div id="getResults">
+                <h2>Results</h2>
+                <button onclick="getResults()">Refresh Results</button>
+                <div id="resultsList"></div>
+            </div>
+        
+            <div id="candidates">
+                <h2>Candidates</h2>
+                <button onclick="getCandidates()">Refresh Candidates</button>
+                <div id="candidatesList"></div>
+            </div>        
+    </main>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ECFFE6;
+    background-image: url('../assets/imagefiles/Image1.jpg');
+    opacity: 0.8 ;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #399918;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #399918;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+fieldset {
+    border: none;
+    margin: 1rem 0;
+}
+
+legend {
+    font-weight: bold;
+}
+    </style>
+    <footer>
+        <p>&copy; 2024 ICP Voting System</p>
+    </footer>
+</body>
+</html>

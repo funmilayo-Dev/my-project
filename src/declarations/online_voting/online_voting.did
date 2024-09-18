@@ -1,0 +1,17 @@
+type Result = 
+ variant {
+   err: text;
+   ok;
+ };
+service : {
+  addCandidate: (text) -> (Result);
+  getCandidates: () -> (vec text) query;
+  getResults: () -> (vec record {
+                           text;
+                           nat;
+                         }) query;
+  getVoterCount: () -> (nat) query;
+  initializeSystem: () -> (Result);
+  reset: () -> (Result);
+  vote: (text) -> (Result);
+}

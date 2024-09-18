@@ -1,0 +1,40 @@
+ {
+  "canisters": {
+   "online_voting": {
+     "main": "src/online_voting/main.mo",
+      "type": "motoko",
+      "source": ["src/frontend"],
+      "build": "npm run build",
+      "candid": "src/frontend/frontend.did"
+ },
+    
+    "online_voting_assets": {
+      "dependencies": [
+        "online_voting"
+      ],
+      "frontend": {
+        "entrypoint": "src/online_voting_assets/src/index.html"
+      },
+      "source": [
+        "src/online_voting_assets/assets",
+        "dist/online_voting_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
